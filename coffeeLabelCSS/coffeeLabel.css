@@ -1,0 +1,53 @@
+/*
+GOOGLE FONTS
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Modak', cursive;
+font-family: 'Mansalva', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Dancing Script', cursive;
+*/
+
+
+
+
+.text {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+/*    background-attachment: fixed;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/images/coffee_image.jpg) center top;
+    background-repeat: space;
+    opacity: 0.4;
+}
+
+
+
+.brand_name{
+    font-family: 'Mansalva', cursive;
+    font-size: 25px;
+}
+
+.coffee_name{
+    font-family: 'Fascinate Inline', cursive;
+}
+
+#signature_coffee{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+#dark_roast, #rich_and_flavorful, #whole_bean{
+    text-transform: uppercase;
+}

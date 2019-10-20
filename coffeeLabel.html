@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Label</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="coffeeLabelCSS/coffeeLabel.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Fascinate+Inline|Indie+Flower|Mansalva|Modak|Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class=image>
+            <div class=text>
+        <h4 class="brand_name">Java Choice &reg</h4>
+        <p class ="coffee_name">The <br /> People's <br /> Choice <br /> Dark</p>
+        <p id ="signature_coffee">coffee</p>
+        
+        <p id="dark_roast">Dark Roast</p> 
+        <p id="rich_and_flavorful">Rich and Flavorable</p>
+        
+        <p id="whole_bean">100% Arabica Whole Bean Coffee</p>
+        
+        <p id="net_weight">NET WT. 13 OZ(369g)</p>
+                
+                <!--        Added Geolocation        -->
+                
+        <p>Click the button to get your location.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+            
+            
+        </script> 
+                
+                
+            </div>    
+        </div>
+    </body>
+
+</html>
